@@ -4,7 +4,7 @@ int main(){
     int size=0;
     printf("How many numbers are you going to enter?\n");
     scanf("%d", &size);
-    int a[size]={};
+    int a[size];
     printf("Enter the numbers:\n");
     for(int i=0;i<size;i++){
         printf("%d. ",i+1);

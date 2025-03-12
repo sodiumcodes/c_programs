@@ -5,12 +5,16 @@ int main()
 {
     int num=0,rev=0;
     scanf("%d",&num);
-    int a=num;
+    int copyNum = num;
     if(num>0){
-        while(a!=0){
-            int rem=a%10;
-            rev=rev*10+rem;
-            a/=10;
+        //logic for reversing the number
+        while(copyNum!=0){
+            //extracting the last digit
+            int rem = copyNum%10;
+            //revering the number digit by digit
+            rev = rev*10+rem;
+            //eliminating the last digit
+            copyNum/= 10;
         }
         if(num==rev){
             printf("YES");
